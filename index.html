@@ -154,6 +154,33 @@
       color: var(--gold-light);
       opacity: 0.8;
     }
+    .location-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 22px;
+      padding: 12px 28px;
+      border: 1px solid var(--gold);
+      background: transparent;
+      color: var(--gold);
+      font-family: 'Cinzel', serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s;
+    }
+    .location-btn:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+    .location-btn svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
     .scroll-hint {
       position: absolute;
       bottom: 30px;
@@ -488,6 +515,14 @@
     <p class="hero-date">May 24, 2026 &nbsp;·&nbsp; Sunday</p>
     <p class="hero-venue">De Mansion Events Place</p>
     <p class="hero-time">6:00 PM — 10:00 PM</p>
+    <a class="location-btn"
+       href="https://www.google.com/maps/place/De+Mansion+Events+Place/@13.1763732,123.7486841,17z/data=!3m1!4b1!4m6!3m5!1s0x33a10185b8447379:0x875aec2277e74625!8m2!3d13.176368!4d123.751259!16s%2Fg%2F11t7ts5xy9"
+       target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+      </svg>
+      View Location
+    </a>
   </div>
   <div class="scroll-hint">
     <span>Scroll</span>
@@ -643,6 +678,15 @@
       <p style="color: var(--gold); opacity: 1; font-style: normal; letter-spacing: 0.2em; font-size: 0.85rem;">
         DE MANSION EVENTS PLACE
       </p>
+      <br/>
+      <a class="location-btn"
+         href="https://www.google.com/maps/place/De+Mansion+Events+Place/@13.1763732,123.7486841,17z/data=!3m1!4b1!4m6!3m5!1s0x33a10185b8447379:0x875aec2277e74625!8m2!3d13.176368!4d123.751259!16s%2Fg%2F11t7ts5xy9"
+         target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+        </svg>
+        View Location
+      </a>
     </div>
   </div>
 </section>
