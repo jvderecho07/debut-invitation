@@ -22,7 +22,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ── PARTICLES ── */
+/*PARTICLES*/
 #particles {
   position: fixed;
   inset: 0;
@@ -45,7 +45,7 @@ body {
   100% { transform: translateY(-10vh) scale(1.5); opacity: 0; }
 }
 
-/* ── HERO ── */
+/*HERO */
 #hero {
   position: relative;
   min-height: 100vh;
@@ -226,7 +226,7 @@ body {
   50%       { transform: translateX(-50%) translateY(8px); }
 }
 
-/* ── COUNTDOWN ── */
+/*COUNTDOWN*/
 #countdown {
   position: relative;
   z-index: 1;
@@ -294,7 +294,7 @@ body {
   margin-top: -20px;
 }
 
-/* ── SECTIONS SHARED ── */
+/*SECTIONS*/
 section {
   position: relative;
   z-index: 1;
@@ -312,7 +312,7 @@ section {
   margin: 0 auto 40px;
 }
 
-/* ── PROGRAM ── */
+/*PROGRAM*/
 #program { background: var(--navy-base); padding-bottom: 0; }
 .event-cards {
   display: flex;
@@ -377,7 +377,7 @@ section {
   text-transform: uppercase;
 }
 
-/* ── GUEST COLOR GUIDE ── */
+/*GUEST COLOR GUIDE*/
 #dress-guide { background: linear-gradient(180deg, var(--navy-base), var(--navy-mid), var(--navy-base)); }
 .dress-guide-box {
   border: 1px solid rgba(201,168,76,0.25);
@@ -479,7 +479,7 @@ section {
   flex-shrink: 0;
 }
 
-/* ── FOOTER ── */
+/*FOOTER*/
 footer {
   position: relative;
   z-index: 1;
@@ -502,7 +502,7 @@ footer p {
   text-transform: uppercase;
 }
 
-/* ── ANIMATIONS ── */
+/*ANIMATIONS*/
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -517,11 +517,7 @@ footer p {
   transform: translateY(0);
 }
 
-/* ══════════════════════════════════════
-   RESPONSIVE — mobile-first breakpoints
-   ══════════════════════════════════════ */
-
-/* ── Tablet & below (≤ 768px) ── */
+/*RESPONSIVE*/
 @media (max-width: 768px) {
   section { padding: 60px 16px; }
 
@@ -572,7 +568,7 @@ footer p {
   .hero-date { letter-spacing: 0.15em; }
   .hero-time { letter-spacing: 0.1em; }
 
-  /* Countdown boxes wrap into 2×2 */
+  /* Countdown boxes*/
   .countdown-grid { gap: 8px; }
   .countdown-box { min-width: 70px; }
   .countdown-num {
@@ -603,7 +599,6 @@ footer p {
   footer p { letter-spacing: 0.15em; font-size: 0.72rem; }
 }
 
-/* ── Very small screens (≤ 360px) ── */
 @media (max-width: 360px) {
   .hero-name { font-size: clamp(2.8rem, 12vw, 4rem); }
   .hero-eighteen { font-size: clamp(3.2rem, 16vw, 5rem); }
@@ -616,7 +611,6 @@ footer p {
   .event-badge { padding: 10px 12px; font-size: 0.6rem; }
 }
 
-/* ── Large screens (≥ 1200px) ── */
 @media (min-width: 1200px) {
   .section-inner { max-width: 1000px; }
   .event-desc { max-width: 700px; }

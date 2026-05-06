@@ -1,4 +1,4 @@
-// ── PARTICLES ──
+//PARTICLESSS
 const container = document.getElementById('particles');
 for (let i = 0; i < 40; i++) {
   const p = document.createElement('div');
@@ -14,7 +14,7 @@ for (let i = 0; i < 40; i++) {
   container.appendChild(p);
 }
 
-// ── COUNTDOWN ──
+// COUNTDOWNESS
 var countdownTimer;
 function updateCountdown() {
   var target = new Date('2026-05-24T18:00:00');
@@ -43,7 +43,7 @@ function updateCountdown() {
 updateCountdown();
 countdownTimer = setInterval(updateCountdown, 1000);
 
-// ── SCROLL REVEAL ──
+//SCROLLERSS
 const revealObserver = new IntersectionObserver(function (entries) {
   entries.forEach(function (entry) {
     if (entry.isIntersecting) {
