@@ -157,8 +157,7 @@ body {
   justify-content: center;
   margin-top: 22px;
 }
-.location-btn,
-.rsvp-btn {
+.location-btn,.rsvp-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -378,7 +377,8 @@ section {
 }
 
 /*GUEST COLOR GUIDE*/
-#dress-guide { background: linear-gradient(180deg, var(--navy-base), var(--navy-mid), var(--navy-base)); }
+#dress-guide { 
+    background: linear-gradient(180deg, var(--navy-base), var(--navy-mid), var(--navy-base)); }
 .dress-guide-box {
   border: 1px solid rgba(201,168,76,0.25);
   padding: 40px;
@@ -390,7 +390,8 @@ section {
 .dress-category {
   margin-bottom: 28px;
 }
-.dress-category:last-child { margin-bottom: 0; }
+.dress-category:last-child { 
+    margin-bottom: 0; }
 .dress-category-title {
   font-family: 'Cinzel', serif;
   font-size: 0.8rem;
@@ -519,67 +520,83 @@ footer p {
 
 /*RESPONSIVE*/
 @media (max-width: 768px) {
-  section { padding: 60px 16px; }
+  section { 
+    padding: 60px 16px; }
 
   /* Hero */
-  #hero { padding: 60px 16px 80px; }
-  .hero-pre { letter-spacing: 0.2em; }
-  .hero-turns { letter-spacing: 0.3em; }
-  .divider { margin: 18px auto; }
-
+  #hero { 
+    padding: 60px 16px 80px; }
+  .hero-pre { 
+    letter-spacing: 0.2em; }
+  .hero-turns { 
+    letter-spacing: 0.3em; }
+  .divider { 
+    margin: 18px auto; }
   /* Countdown */
-  #countdown { padding: 60px 16px; }
-  .countdown-grid { gap: 10px; }
+  #countdown { 
+    padding: 60px 16px; }
+  .countdown-grid { 
+    gap: 10px; }
   .countdown-num {
     width: clamp(70px, 18vw, 100px);
     height: clamp(70px, 18vw, 100px);
   }
-
   /* Program event cards */
-  .event-card { padding: 60px 16px; }
-  .event-title { letter-spacing: 0.04em; }
-  .event-desc { max-width: 100%; }
-  .event-badge { padding: 12px 24px; letter-spacing: 0.2em; font-size: 0.7rem; }
-
+  .event-card { 
+    padding: 60px 16px; }
+  .event-title { 
+    letter-spacing: 0.04em; }
+  .event-desc { 
+    max-width: 100%; }
+  .event-badge { 
+    padding: 12px 24px; 
+    letter-spacing: 0.2em; 
+    font-size: 0.7rem; }
   /* Dress guide */
-  .dress-guide-box { padding: 28px 20px; }
-
+  .dress-guide-box { 
+    padding: 28px 20px; }
   /* Footer */
-  footer { padding: 40px 16px; }
+  footer { 
+    padding: 40px 16px; }
 }
-
-/* ── Small mobile (≤ 480px) ── */
 @media (max-width: 480px) {
-  /* Hide countdown separators so boxes don't overflow */
-  .countdown-sep { display: none; }
 
-  /* Hero buttons stack full width */
-  .hero-btns { flex-direction: column; align-items: center; }
-  .location-btn,
-  .rsvp-btn {
+  .countdown-sep { 
+    display: none; }
+  .hero-btns { 
+    flex-direction: column;
+    align-items: center; }
+  .location-btn,.rsvp-btn {
     width: 100%;
     max-width: 280px;
     justify-content: center;
     padding: 14px 20px;
   }
-
   /* Hero text tightening */
-  .hero-pre { font-size: 0.75rem; letter-spacing: 0.15em; }
-  .hero-date { letter-spacing: 0.15em; }
-  .hero-time { letter-spacing: 0.1em; }
-
+  .hero-pre { 
+    font-size: 0.75rem; 
+    letter-spacing: 0.15em; }
+  .hero-date { 
+    letter-spacing: 0.15em; }
+  .hero-time { 
+    letter-spacing: 0.1em; }
   /* Countdown boxes*/
-  .countdown-grid { gap: 8px; }
-  .countdown-box { min-width: 70px; }
+  .countdown-grid { 
+    gap: 8px; }
+  .countdown-box { 
+    min-width: 70px; }
   .countdown-num {
     width: clamp(64px, 20vw, 90px);
     height: clamp(64px, 20vw, 90px);
     font-size: clamp(1.8rem, 8vw, 2.8rem);
   }
-  .countdown-label { font-size: 0.6rem; letter-spacing: 0.2em; }
+  .countdown-label { 
+    font-size: 0.6rem; 
+    letter-spacing: 0.2em; }
 
   /* Program cards */
-  .event-card { padding: 50px 16px; }
+  .event-card { 
+    padding: 50px 16px; }
   .event-badge {
     padding: 10px 16px;
     letter-spacing: 0.15em;
@@ -588,31 +605,43 @@ footer p {
   }
 
   /* Dress guide */
-  .dress-guide-box { padding: 20px 14px; }
-  .color-swatch-row { gap: 6px; }
-  .color-swatch { padding: 4px 8px; font-size: 0.6rem; }
+  .dress-guide-box { 
+    padding: 20px 14px; }
+  .color-swatch-row { 
+    gap: 6px; }
+  .color-swatch { 
+    padding: 4px 8px; 
+    font-size: 0.6rem; }
 
   /* Section headings */
-  .section-title { letter-spacing: 0.08em; }
+  .section-title { 
+    letter-spacing: 0.08em; }
 
   /* Footer */
-  footer p { letter-spacing: 0.15em; font-size: 0.72rem; }
+  footer p { 
+    letter-spacing: 0.15em; 
+    font-size: 0.72rem; }
 }
-
 @media (max-width: 360px) {
-  .hero-name { font-size: clamp(2.8rem, 12vw, 4rem); }
-  .hero-eighteen { font-size: clamp(3.2rem, 16vw, 5rem); }
+  .hero-name { 
+    font-size: clamp(2.8rem, 12vw, 4rem); }
+  .hero-eighteen { 
+    font-size: clamp(3.2rem, 16vw, 5rem); }
   .countdown-num {
     width: 58px;
     height: 58px;
     font-size: 1.6rem;
   }
-  .event-title { font-size: clamp(1.3rem, 6vw, 1.8rem); }
-  .event-badge { padding: 10px 12px; font-size: 0.6rem; }
+  .event-title { 
+    font-size: clamp(1.3rem, 6vw, 1.8rem); }
+  .event-badge { 
+    padding: 10px 12px; font-size: 0.6rem; }
 }
-
 @media (min-width: 1200px) {
-  .section-inner { max-width: 1000px; }
-  .event-desc { max-width: 700px; }
-  .event-card { padding: 100px 40px; }
+  .section-inner { 
+    max-width: 1000px; }
+  .event-desc { 
+    max-width: 700px; }
+  .event-card { 
+    padding: 100px 40px; }
 }
