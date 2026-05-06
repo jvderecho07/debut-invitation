@@ -150,15 +150,19 @@ body {
   color: var(--gold-light);
   opacity: 0.8;
 }
-.location-btn {
+.hero-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 22px;
+}
+.location-btn,
+.rsvp-btn {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 22px;
   padding: 12px 28px;
-  border: 1px solid var(--gold);
-  background: transparent;
-  color: var(--gold);
   font-family: 'Cinzel', serif;
   font-size: 0.75rem;
   letter-spacing: 0.25em;
@@ -167,11 +171,26 @@ body {
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
 }
+.location-btn {
+  border: 1px solid var(--gold);
+  background: transparent;
+  color: var(--gold);
+}
 .location-btn:hover {
   background: var(--gold);
   color: var(--dark);
 }
-.location-btn svg {
+.rsvp-btn {
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--dark);
+}
+.rsvp-btn:hover {
+  background: transparent;
+  color: var(--gold);
+}
+.location-btn svg,
+.rsvp-btn svg {
   width: 14px;
   height: 14px;
   fill: currentColor;

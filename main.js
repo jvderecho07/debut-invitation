@@ -7,8 +7,8 @@ for (let i = 0; i < 40; i++) {
     left: ${Math.random() * 100}%;
     --dur: ${6 + Math.random() * 10}s;
     --delay: ${Math.random() * 10}s;
-    width: ${2 + Math.random() * 4}px;
-    height: ${2 + Math.random() * 4}px;
+    width: ${4 + Math.random() * 6}px;
+    height: ${4 + Math.random() * 6}px;
     opacity: 0;
   `;
   container.appendChild(p);
