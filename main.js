@@ -1,3 +1,48 @@
+// ── MUSIC ──
+var music    = document.getElementById('bg-music');
+var musicBtn = document.getElementById('music-btn');
+var iconOn   = document.getElementById('music-icon-on');
+var iconOff  = document.getElementById('music-icon-off');
+
+function setPlaying(playing) {
+  if (playing) {
+    iconOn.style.display  = '';
+    iconOff.style.display = 'none';
+    musicBtn.classList.add('playing');
+  } else {
+    iconOn.style.display  = 'none';
+    iconOff.style.display = '';
+    musicBtn.classList.remove('playing');
+  }
+}
+
+// Attempt autoplay on load
+music.volume = 0.5;
+var autoplayPromise = music.play();
+if (autoplayPromise !== undefined) {
+  autoplayPromise
+    .then(function() { setPlaying(true); })
+    .catch(function() {
+      // Autoplay blocked — wait for first user interaction
+      setPlaying(false);
+      document.addEventListener('click', function tryPlay() {
+        music.play().then(function() { setPlaying(true); });
+        document.removeEventListener('click', tryPlay);
+      }, { once: true });
+    });
+}
+
+// Toggle on button click
+musicBtn.addEventListener('click', function(e) {
+  e.stopPropagation();
+  if (music.paused) {
+    music.play().then(function() { setPlaying(true); });
+  } else {
+    music.pause();
+    setPlaying(false);
+  }
+});
+
 //PARTICLESSS
 const container = document.getElementById('particles');
 for (let i = 0; i < 40; i++) {

@@ -8,6 +8,20 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+<audio id="bg-music" loop>
+  <source src="song.mp3" type="audio/mpeg"/>
+</audio>
+
+<!-- Music toggle button -->
+<button id="music-btn" aria-label="Toggle music" title="Toggle music">
+  <svg id="music-icon-on" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z"/>
+  </svg>
+  <svg id="music-icon-off" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="display:none;">
+    <path d="M4.27 3 3 4.27l9 9V17a4 4 0 1 0 2 3.55V15.27l5.73 5.73L21 19.73 4.27 3zM14 7h4V3h-6v5.18L14 10.4V7z"/>
+  </svg>
+</button>
+
 <!--Particles -->
 <div id="particles"></div>
 <!--HERONESS-->

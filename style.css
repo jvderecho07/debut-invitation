@@ -319,7 +319,7 @@ section {
   gap: 0;
 }
 .event-card {
-  padding: 80px 20px;
+  padding: 48px 20px;
   text-align: center;
   background: var(--navy-base);
   border-top: 1px solid rgba(201,168,76,0.12);
@@ -339,29 +339,29 @@ section {
 }
 .event-title {
   font-family: 'Cinzel', serif;
-  font-size: clamp(1.6rem, 5vw, 2.8rem);
+  font-size: clamp(1.2rem, 3.5vw, 2rem);
   font-weight: 600;
   color: var(--cream);
   letter-spacing: 0.08em;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   line-height: 1.2;
 }
 .event-line {
-  width: 50px;
+  width: 40px;
   height: 1px;
   background: var(--gold);
-  margin: 0 auto 30px;
+  margin: 0 auto 18px;
   opacity: 0.6;
 }
 .event-desc {
   font-family: 'Cormorant Garamond', serif;
   font-style: italic;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
   color: var(--cream);
   opacity: 0.8;
-  max-width: 620px;
-  margin: 0 auto 36px;
-  line-height: 1.9;
+  max-width: 560px;
+  margin: 0 auto 24px;
+  line-height: 1.7;
 }
 .event-badge {
   display: inline-flex;
@@ -503,6 +503,44 @@ footer p {
   text-transform: uppercase;
 }
 
+/* ── MUSIC BUTTON ── */
+#music-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--gold);
+  background: rgba(10, 22, 40, 0.85);
+  color: var(--gold);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  transition: background 0.3s, transform 0.2s;
+}
+#music-btn:hover {
+  background: var(--gold);
+  color: var(--dark);
+  transform: scale(1.1);
+}
+#music-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+#music-btn.playing {
+  animation: pulse-ring 2s ease-out infinite;
+}
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(201,168,76,0.5); }
+  70%  { box-shadow: 0 0 0 10px rgba(201,168,76,0); }
+  100% { box-shadow: 0 0 0 0 rgba(201,168,76,0); }
+}
+
 /*ANIMATIONS*/
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
@@ -543,7 +581,7 @@ footer p {
   }
   /* Program event cards */
   .event-card { 
-    padding: 60px 16px; }
+    padding: 36px 16px; }
   .event-title { 
     letter-spacing: 0.04em; }
   .event-desc { 
@@ -596,7 +634,7 @@ footer p {
 
   /* Program cards */
   .event-card { 
-    padding: 50px 16px; }
+    padding: 28px 16px; }
   .event-badge {
     padding: 10px 16px;
     letter-spacing: 0.15em;
@@ -643,5 +681,5 @@ footer p {
   .event-desc { 
     max-width: 700px; }
   .event-card { 
-    padding: 100px 40px; }
+    padding: 64px 40px; }
 }
