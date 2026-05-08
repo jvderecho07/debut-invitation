@@ -52,8 +52,8 @@ for (let i = 0; i < 40; i++) {
     left: ${Math.random() * 100}%;
     --dur: ${6 + Math.random() * 10}s;
     --delay: ${Math.random() * 10}s;
-    width: ${4 + Math.random() * 6}px;
-    height: ${4 + Math.random() * 6}px;
+    width: ${6 + Math.random() * 8}px;
+    height: ${6 + Math.random() * 8}px;
     opacity: 0;
   `;
   container.appendChild(p);
