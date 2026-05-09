@@ -62,7 +62,7 @@ for (let i = 0; i < 40; i++) {
 // COUNTDOWNESS
 var countdownTimer;
 function updateCountdown() {
-  var target = new Date('2026-05-24T18:00:00');
+  var target = new Date('2026-05-24T17:30:00');
   var now    = new Date();
   var diff   = target - now;
 
